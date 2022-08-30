@@ -1,0 +1,230 @@
+h3 {
+    color: rgb(26, 99, 30);
+    font-size:40px;
+    text-align:center;
+}
+
+small {
+    color: yellow;
+}
+
+/* universal selector */
+
+*{
+    /* color: red;  */
+     margin: 0px;
+    padding: 0px;
+}
+
+/* tag selector or element selector */
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+/* Attribute Selector */
+
+a[title="google"] {
+    color: yellow;
+}
+
+/* Id Selector */
+#idselector {
+    color: green;
+    letter-spacing: 20px;
+    text-indent: 30px;
+    font-size: 40px;
+    line-height: 30px;
+}
+
+/* Class Selector */
+.classselector{
+    color: red;
+    word-spacing: 40px;
+    line-height: 40px;
+}
+/* Decedent Selector */
+.desc a {
+    color: blue;
+    text-decoration: none;
+}
+/* Child Selector */
+
+.child>a {
+    color: green;
+}
+
+/* a:link {
+    color: blue;
+}
+
+a:hover{
+    color: red;
+    letter-spacing: 20px;
+}
+
+a:active{
+    color: green;
+}
+
+a:visited {
+    color: brown;
+} */
+
+/* target */
+
+p:target {
+    border: 1px solid red;
+    color: green;
+    word-spacing: 30px;
+}
+div:target{
+    color: green;
+}
+
+/* Border */
+.borderone {
+    border: 10px dashed yellow;
+}
+.bordertwo {
+    border-left: 20px solid red;
+}
+.borderstyleone{
+    border-style: dotted;
+    /* all four */
+}
+.borderstylemixed{
+    /* border-style: solid dotted ; */
+    /* T & B / L & R */
+    /* border-style: dotted dashed double; */
+    /* T / L & R / B */
+    border-style : solid dashed dotted double;
+    /* T / R / B / L*/
+}
+.borderwidthone{
+    border-width: 1px 10px ;
+}
+    
+/* Margin */
+.marginone{
+    margin: 100px;
+    border: 1px solid black;
+}
+
+.margintwo{
+    margin-left: 50px;
+}
+
+/* Padding */
+.padding{
+    padding: 100px 40px 300px 10px;
+    border: 1px solid black;
+}
+/* Inline */
+.inline{
+    display: inline-block;
+    border: 1px solid black;
+    width: 200px;
+}
+
+.block{
+    border: 1px solid red;
+    width: 200px;
+    display: inline;
+}
+.float_left img{
+    width: 40%;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+.float_right img{
+    width: 40%;
+    float: right;
+}
+.clear{
+    clear: both;
+}
+/* Grid */
+.grid_one div,
+.grid_two div,
+.grid_three div,
+.grid_four div,
+.grid_five div,
+.grid_six div{
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.grid_one,
+.grid_two,
+.grid_three,
+.grid_four,
+.grid_five,
+.grid_six{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid_two{
+    grid-column-gap: 40px;
+}
+.grid_three{
+    grid-row-gap: 50px;
+}
+.grid_four{
+    grid-gap: 50px;
+}
+.column_add{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.row_add{
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+/* Position */
+.relative_parent{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid red;
+}
+.relative{
+    width: 400px;
+    height: 200px;
+    border: 2px solid yellow;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+.absolute_parent{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid green;
+    position: relative;
+}
+.absolute{
+    width: 300px;
+    height: 200px;
+    border: 2px solid blue;
+    position: absolute;
+    top:50px;
+    left: 100px;
+}
+.fixed {
+    position: fixed;
+    top: 100px;
+    right: 100px;
+}
+/* Font */
+.online {
+    font-family: 'Dancing Script', cursive;
+}
+@font-face {
+    src:url(Anton/Anton-regular.ttf) ;
+    font-family: anton;
+}
+.offline{
+    font-family: anton;
+}
